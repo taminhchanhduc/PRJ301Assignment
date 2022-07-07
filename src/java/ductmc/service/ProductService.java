@@ -5,10 +5,17 @@
  */
 package ductmc.service;
 
+import ductmc.dto.BaseResponse;
+import ductmc.dto.ProductRequest;
+
 /**
  *
  * @author Peter
  */
 public interface ProductService {
-    
+    BaseResponse getAll(Integer page, Integer size);
+    BaseResponse getById(Integer id);
+    BaseResponse create(ProductRequest productRequest);
+    BaseResponse update(Integer id, ProductRequest productRequest);
+    BaseResponse delete(Integer id);
 }
