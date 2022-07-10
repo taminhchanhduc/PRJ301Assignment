@@ -3,14 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/web/login.jsp</file>
-            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/web/index.jsp</file>
-            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/web/register.jsp</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/dao/AccountDAO.java</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/controller/LoginController.java</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/dto/AccountProfile.java</file>
             <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/web/contact.html</file>
-            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/web/why.html</file>
-            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/web/shop.jsp</file>
-            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/duc/controllers/MainController.java</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/dto/LoginRequest.java</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/service/AccountService.java</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/database/DatabaseConfiguration.java</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/dto/BaseResponse.java</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/controller/ProductController.java</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/dao/impl/AccountDAOImpl.java</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/controller/OrderController.java</file>
+            <file>file:/C:/Users/Duc/Desktop/PRJ301Assignment/PRJ301Assignment/src/java/ductmc/service/impl/AccountServiceImpl.java</file>
         </group>
     </open-files>
 </project-private>

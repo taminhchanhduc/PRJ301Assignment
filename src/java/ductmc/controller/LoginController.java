@@ -3,8 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package duc.controllers;
+package ductmc.controller;
 
+import ductmc.dto.LoginRequest;
+import ductmc.service.AccountService;
+import ductmc.service.impl.AccountServiceImpl;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -70,7 +73,20 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+//        processRequest(request, response);
+        try {
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            
+            LoginRequest loginRequest = new LoginRequest(username, password);
+            
+            AccountService accountService = new AccountServiceImpl();
+            
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            
+        }
     }
 
     /**
