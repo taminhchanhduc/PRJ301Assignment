@@ -13,10 +13,6 @@
         <servlet-class>ductmc.controller.LoginController</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>LoginController</servlet-name>
-        <servlet-class>ductmc.controller.LoginController</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>LogoutController</servlet-name>
         <servlet-class>ductmc.controller.LogoutController</servlet-class>
     </servlet>
@@ -47,6 +43,10 @@
     <servlet>
         <servlet-name>CheckoutCartController</servlet-name>
         <servlet-class>ductmc.controller.CheckoutCartController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HomeController</servlet-name>
+        <servlet-class>ductmc.controller.HomeController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ProductController</servlet-name>
@@ -92,12 +92,16 @@
         <servlet-name>CheckoutCartController</servlet-name>
         <url-pattern>/CheckoutCartController</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomeController</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>home</welcome-file>
     </welcome-file-list>
 </web-app>

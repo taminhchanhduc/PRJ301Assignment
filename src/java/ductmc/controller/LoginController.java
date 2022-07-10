@@ -5,6 +5,8 @@
  */
 package ductmc.controller;
 
+import ductmc.constant.Status;
+import ductmc.dto.BaseResponse;
 import ductmc.dto.LoginRequest;
 import ductmc.service.AccountService;
 import ductmc.service.impl.AccountServiceImpl;
@@ -20,6 +22,9 @@ import javax.servlet.http.HttpServletResponse;
  * @author Duc
  */
 public class LoginController extends HttpServlet {
+    
+    private static final String LOGIN_JSP = "login.jsp";
+    private static final String HOME_CONTROLLER = "home";
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -59,7 +64,8 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        String url = LOGIN_JSP;
+        request.getRequestDispatcher(url).forward(request, response);
     }
 
     /**
@@ -73,19 +79,24 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        processRequest(request, response);
         try {
+            String url = HOME_CONTROLLER;
             String username = request.getParameter("username");
             String password = request.getParameter("password");
             
             LoginRequest loginRequest = new LoginRequest(username, password);
             
             AccountService accountService = new AccountServiceImpl();
+            BaseResponse baseResponse = accountService.login(loginRequest);
             
+            if (Status.SUCCESS.equals(baseResponse.getStatus())) {
+                response.sendRedirect(url);
+            } else {
+                request.setAttribute("loginError", baseResponse.getMessage());
+                doGet(request, response);
+            }
         } catch (Exception ex) {
             ex.printStackTrace();
-        } finally {
-            
         }
     }
 

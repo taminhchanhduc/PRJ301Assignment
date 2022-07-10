@@ -14,6 +14,7 @@ import java.util.Date;
 public class Product {
     private Integer id;
     private String name;
+    private String image;
     private String description;
     private Double price;
     private Double quantity;
@@ -23,9 +24,10 @@ public class Product {
     public Product() {
     }
 
-    public Product(Integer id, String name, String description, Double price, Double quantity, Date createdAt, Date updateAt) {
+    public Product(Integer id, String name, String image, String description, Double price, Double quantity, Date createdAt, Date updateAt) {
         this.id = id;
         this.name = name;
+        this.image = image;
         this.description = description;
         this.price = price;
         this.quantity = quantity;
@@ -47,6 +49,14 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getDescription() {

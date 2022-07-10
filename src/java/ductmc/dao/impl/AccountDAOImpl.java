@@ -25,7 +25,7 @@ public class AccountDAOImpl implements AccountDAO {
     private PreparedStatement pstm;
     private ResultSet rs;
     
-    private static final String QUERY_GET_PROFILE = "SELECT Username, Fullname, Role WHERE Username = ? AND Password = ?";
+    private static final String QUERY_GET_PROFILE = "SELECT Username, Fullname, Role FROM Account WHERE Username = ? AND Password = ?";
     
     private void close() throws SQLException {
         if (rs != null) rs.close();

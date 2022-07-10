@@ -13,7 +13,7 @@ import ductmc.dto.ProductRequest;
  * @author Peter
  */
 public interface ProductService {
-    BaseResponse getAll(Integer page, Integer size);
+    BaseResponse getAll(Integer page, Integer size) throws Exception;
     BaseResponse getById(Integer id);
     BaseResponse create(ProductRequest productRequest);
     BaseResponse update(Integer id, ProductRequest productRequest);

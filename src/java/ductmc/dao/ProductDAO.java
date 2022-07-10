@@ -13,7 +13,7 @@ import java.util.List;
  * @author Peter
  */
 public interface ProductDAO {
-    List<Product> getProducts(int page, int size);
+    List<Product> getProducts(int page, int size) throws Exception;
     Product getById(Integer id);
     Boolean create(Product product);
     Boolean updateById(Integer id);

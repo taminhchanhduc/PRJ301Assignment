@@ -18,8 +18,8 @@ public class ProductCart extends Product {
     public ProductCart() {
     }
 
-    public ProductCart(Integer id, String name, String description, Double quantity, Double price, Double quota, Date createdAt, Date updatedAt) {
-        super(id, name, description, price, quantity, createdAt, updatedAt);
+    public ProductCart(Integer id, String name, String image, String description, Double quantity, Double price, Double quota, Date createdAt, Date updatedAt) {
+        super(id, name, image, description, price, quantity, createdAt, updatedAt);
         this.quota = quota;
     }
 
