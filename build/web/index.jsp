@@ -108,8 +108,7 @@
                                                     KeyCap Store
                                                 </h1>
                                                 <p>
-                                                    Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
-                                                </p>
+                                                    KeyCap4U is a team of artists with a lifelong passion for creating artisan keycaps and more. With endless creativity and a strong belief that life is not supposed to be boring, our mission is to transform your working space into art and beyond.                                                </p>
                                                 <a href="">
                                                     Contact Us
                                                 </a>
@@ -117,7 +116,7 @@
                                         </div>
                                         <div class="col-md-5 ">
                                             <div class="img-box">
-                                                <img src="images/slider-img.png" alt="" />
+                                                <img src="images/slider.jpg" height="375" width="425" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -133,8 +132,7 @@
                                                     KeyCap Store
                                                 </h1>
                                                 <p>
-                                                    Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
-                                                </p>
+                                                    KeyCap4U is a team of artists with a lifelong passion for creating artisan keycaps and more. With endless creativity and a strong belief that life is not supposed to be boring, our mission is to transform your working space into art and beyond.                                                </p>
                                                 <a href="">
                                                     Contact Us
                                                 </a>
@@ -142,7 +140,7 @@
                                         </div>
                                         <div class="col-md-5 ">
                                             <div class="img-box">
-                                                <img src="images/slider-img.png" alt="" />
+                                                <img src="images/slider.jpg" height="375" width="425" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -158,8 +156,7 @@
                                                     KeyCap Store
                                                 </h1>
                                                 <p>
-                                                    Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
-                                                </p>
+                                                    KeyCap4U is a team of artists with a lifelong passion for creating artisan keycaps and more. With endless creativity and a strong belief that life is not supposed to be boring, our mission is to transform your working space into art and beyond.                                                </p>
                                                 <a href="">
                                                     Contact Us
                                                 </a>
@@ -167,7 +164,7 @@
                                         </div>
                                         <div class="col-md-5 ">
                                             <div class="img-box">
-                                                <img src="images/slider-img.png" alt="" />
+                                                <img src="images/slider.jpg" height="375" width="425" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -214,16 +211,17 @@
                                         <h6>
                                             ${p.name}
                                         </h6>
+                                        <br/>
                                         <h6>
                                             Price
                                             <span>
-                                                ${p.price}
+                                                <fmt:formatNumber value="${p.price}" pattern="$#,##0"/>
                                             </span>
                                         </h6>
                                     </div>
                                     <div class="new">
                                         <span>
-                                            New
+                                            <button class="fa fa-shopping-bag" border="0"></button>
                                         </span>
                                     </div>
                                 </a>

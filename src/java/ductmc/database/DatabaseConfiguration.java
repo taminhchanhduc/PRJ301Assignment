@@ -18,7 +18,7 @@ public class DatabaseConfiguration implements Serializable {
     public static Connection getConnection() throws Exception {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String url = "jdbc:sqlserver://localhost:1433;database=KeyCap4U";
-        Connection conn = DriverManager.getConnection(url, "sa", "0404@HBcd");
+        Connection conn = DriverManager.getConnection(url, "sa", "12345");
         return conn;
     }
 }
